@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+   <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            background: repeating-linear-gradient(to right, #0b52f4, #000000 ,#a076ef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fffbff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 25px;
+            color: #ffd755;
+            font-size: 24px;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+            text-align: left;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        .container input[type="text"]:focus,
+        .container input[type="password"]:focus {
+            border-color: #967259;
+        }
+
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffd755;
+            border: none;
+            border-radius: 10px;
+            color: #fbfbfa;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #f5a544;
+        }
+
+        .container p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .container a {
+            color: #967259;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+        .container p{
+            color:red;
+            font-size: 14px;
+            display: none;
+        }
+        #login{
+            display: block;
+            cursor: pointer;
+            color: #000000;
+            font-family: Calibri;
+        }
+         #login:hover{
+            color: #0e0d1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form>
+            <label for="username">Username or Phone Number</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Sign Up" id="submit">
+            <h3><p id="error-message" class="error-message">*Please input all the details!</p><h3>
+                 <p id="login" class="login">Already have an account?</p>
+        </form>
+    </div>
+     <script src="sign.js"></script>
+</body>
+</html>

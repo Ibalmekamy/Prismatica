@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #fffbff;
+            text-align: center;
+            font-family: Poppins;
+            text-align: left;
+            padding: 30px;
+            font-size: 8vh;
+             font-weight: 100;
+        }
+        h1 {
+             ;
+            color:#fffbff;
+            text-align: left;
+            padding: 10px;
+            font-size: 20vh;
+            font-family: Times New Roman;
+             font-weight: 100;
+        }
+        .button01 {
+            background-color:#ffd755;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+             transition: background-color 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            lighting-color: white;
+            font-family: Times New Roman;
+        }
+        .button01:hover {
+    background-color: #f5a544;
+    color:#2b2411 /* Change to your desired hover color */
+}
+        #vid1 {
+            width: 90%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            right:0;
+            z-index: -1;
+        }
+        .overlay {;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: whitesmoke;
+            z-index: 1;
+        }
+        .overlay h1, .overlay h2 {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <video id="vid1" src="cube.mp4" autoplay loop muted></video>
+            <div class="overlay">
+                <h1>Prismatic Possibilities</h1>
+                <div class="bottom-page1-inner">
+                    <h2>A vibrant online community <br> where programmers and developers of all levels <br>came together to learn,share, and grow.</h2>
+                </div>
+                <div style="text-align: left;">
+                    <button id="btn" class="button01"><b>Get Started</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="begin.js"></script>
+</body>
+</html>
