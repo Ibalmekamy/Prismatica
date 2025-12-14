@@ -2,7 +2,7 @@
 const apiKey = '1aa734dd-5f27-406d-b240-6736940a67eb';
 const basketName = 'Prism';
 const apiUrl = `https://getpantry.cloud/apiv1/pantry/${apiKey}/basket/${basketName}`
-
+//https://getpantry.cloud/apiv1/pantry/1aa734dd-5f27-406d-b240-6736940a67eb/basket/Prism
 
 /* Thats how data is stored in a Storage API-
 {"kamy146":"234545fer..","ritikap22":"Ritika936Patel.","secret_av09":"samriddhiSacchan@",
@@ -103,5 +103,6 @@ login.addEventListener("click",async(evt)=>
     setTimeout(()=>{
      window.location.href=`login.html`;
  },2000);})
+
 
 
