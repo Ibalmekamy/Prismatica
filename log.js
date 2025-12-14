@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiKey = '2f936df8-eeac-4a4f-95e3-1f43cf7d5ffb';
+    const apiKey = '1aa734dd-5f27-406d-b240-6736940a67eb';
     const basketName = 'Prism';
     const apiUrl = `https://getpantry.cloud/apiv1/pantry/${apiKey}/basket/${basketName}`;
 
@@ -56,3 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
